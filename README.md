@@ -14,7 +14,7 @@ Sebastian's and Jan's fun solutions for the course TDA231.
 
 | Homework | Status | Deadline | Score |
 | -------- | ------ | -------- | ----- |
-| 0 | In progress | 2018-03-26 | TBA |
+| [0](hw0/hw0.ipynb) | In progress | 2018-03-26 | TBA |
 
 ## Exam 
 
