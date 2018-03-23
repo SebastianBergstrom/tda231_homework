@@ -16,13 +16,14 @@ Sebastian's and Jan's fun solutions for the course TDA231.
 
 ## Exam 
 
-2018-05-29 10:00  
-24 Hour take-home exam
-
+* 2018-05-29 10:00 24 Hour take-home exam
 
 ## Grade level
 
 Score = Homework/4 + Exam/2
 
-| Grade | 3 | 4 | 5 |
-| Points | 28 | 36 | 48 |
+| Points | Grade |
+| ------ | ----- |
+| 28 | 3 |
+| 36 | 4 |
+| 48 | 5 |
