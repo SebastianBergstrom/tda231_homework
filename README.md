@@ -1,5 +1,7 @@
 # TDA231 - Algorithms for Machine Learning & Inference
 
+![NK](https://pbs.twimg.com/profile_images/599334351898181632/5_7c1o7E_400x400.jpg)
+
 Sebastian's and Jan's fun solutions for the course TDA231.
 
 ## Useful links
@@ -16,7 +18,7 @@ Sebastian's and Jan's fun solutions for the course TDA231.
 
 ## Exam 
 
-* 2018-05-29 10:00 24 Hour take-home exam
+* 2018-05-29 10:00 - 24 Hour take-home exam
 
 ## Grade level
 
