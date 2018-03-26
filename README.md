@@ -1,7 +1,7 @@
 # TDA231 - Algorithms for Machine Learning & Inference
 
 ![NK](https://pbs.twimg.com/profile_images/599334351898181632/5_7c1o7E_400x400.jpg)
-![Jan](/IMG_20180326_161555.JPG)
+![Jan](/IMG_20180326_161555.jpg)
 
 Sebastian's and Jan's fun solutions for the course TDA231.
 
