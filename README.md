@@ -1,10 +1,10 @@
 # TDA231 - Algorithms for Machine Learning & Inference
 
 <p>
-<img src="https://pbs.twimg.com/profile_images/599334351898181632/5_7c1o7E_400x400.jpg" alt="Picture of man with Swedish heritage" width="350px" >
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/599334351898181632/5_7c1o7E_400x400.jpg" alt="Picture of man with Swedish heritage" width="350px" >
 </p>
 <p>
-<img src="/IMG_20180326_161555.jpg" alt="Picture of man with Asian heritage" width="350px")
+<img style="border-radius: 50%;" src="/IMG_20180326_161555.jpg" alt="Picture of man with Asian heritage" width="350px")
 </p>
 
 Sebastian's and Jan's fun solutions for the course TDA231.
@@ -19,7 +19,12 @@ Sebastian's and Jan's fun solutions for the course TDA231.
 
 | Homework | Status | Deadline | Score |
 | -------- | ------ | -------- | ----- |
-| [0](hw0/hw0.ipynb) | In progress | 2018-03-26 | TBA |
+| [0](hw0/hw0.ipynb) | Done | 2018-03-26 | TBA |
+| hw1	| In progress | April 16 | TBA |
+| hw2	| TODO | April 23 | April 16 |
+| hw3	| TODO | May 07 | April 23 |
+| hw4	| TODO | May 14 | May 07 |
+| hw5	| TODO | May 21 | May 14 |
 
 ## Exam 
 
