@@ -38,7 +38,7 @@ def new_classifier_wrapper(Xtest, mus, sigmas):
 
 def cross_validation(data, nFolds, classifier):
     # Precondition
-    # Data evenly divides by nFolds
+    # Data evenly divided by nFolds
     N, p = data.shape
     validation_size = int(N/nFolds)
     validation_indices = np.zeros(N, dtype=bool)
