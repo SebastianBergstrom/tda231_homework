@@ -38,6 +38,7 @@ def cross_validation(data, nFolds, classifier):
     for it in range(nFolds):
         if it == nFolds-1:
             validation_indices[:-N%nFolds] = 0
+            validation_size = N%nFolds
         training_data = data[~validation_indices, :]
         validation_data = data[validation_indices, :]
         labels = training_data[:, -1]
@@ -48,7 +49,7 @@ def cross_validation(data, nFolds, classifier):
         error = 0
         for i in range(validation_size):
             result = classifier(validation_data[i, :-1], mus, sigmas)
-            error += (result[-1] - validation_data[i, -1])**2
+            error += abs(result[-1] - validation_data[i, -1])/2
         error /= validation_size
         validation_indices = np.roll(validation_indices, validation_size)
         total_error += error
