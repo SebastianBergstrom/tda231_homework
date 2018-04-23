@@ -46,7 +46,9 @@ def cross_validation(data, nFolds, classifier):
     validation_indices[:validation_size] = 1
 
     total_error = 0
-    for _ in range(nFolds):
+    for it in range(nFolds):
+        if it == nFolds - 1:
+            validation_indices[:-N % nFolds] = 0
         training_data = data[~validation_indices, :]
         validation_data = data[validation_indices, :]
         labels = training_data[:, -1]
@@ -80,8 +82,6 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
 plt.title('Points')
-print('abc')
 print(cross_validation(data, 5, sph_bayes))
 print(cross_validation(data, 5, new_classifier_wrapper))
 plt.show()
-print('hello')
