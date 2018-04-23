@@ -1,4 +1,5 @@
 import matplotlib
+import os
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from numpy import genfromtxt
@@ -66,11 +67,11 @@ def cross_validation(data, nFolds, classifier):
 
 data = genfromtxt('dataset2.txt', delimiter=',')
 labels = data[:, -1]
-matplotlib.rcParams['text.usetex'] = True
-matplotlib.rcParams['text.latex.unicode'] = True
+#matplotlib.rcParams['text.usetex'] = True
+#matplotlib.rcParams['text.latex.unicode'] = True
 plt.style.use('ggplot')
 fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+ax = fig.add_subplot(111,projection='3d')
 data1 = data[labels == 1, :]
 data2 = data[labels == -1, :]
 ax.plot(data1[:, 0], data1[:, 1], data1[:, 2], '.', label='Classification 1')
@@ -79,6 +80,8 @@ ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_zlabel('z')
 plt.title('Points')
+print('abc')
 print(cross_validation(data, 5, sph_bayes))
 print(cross_validation(data, 5, new_classifier_wrapper))
 plt.show()
+print('hello')
