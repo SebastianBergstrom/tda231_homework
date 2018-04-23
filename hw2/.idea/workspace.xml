@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a681c90-0a65-413a-afb7-fcd402e2e095" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/jan/part2.py" beforeDir="false" afterPath="$PROJECT_DIR$/jan/part2.py" afterDir="false" />
-    </list>
+    <list default="true" id="3a681c90-0a65-413a-afb7-fcd402e2e095" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +39,11 @@
       <file leaf-file-name="part2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jan/part2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="-1078">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -334,8 +335,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jan/part2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="-1078">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
