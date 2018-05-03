@@ -50,6 +50,10 @@ def cross_validation(data, nFolds, classifier):
         for i in range(validation_size):
             result = classifier(validation_data[i, :-1], mus, sigmas)
             error += abs(result[-1] - validation_data[i, -1])/2
+            if result[-1] > validation_data[i,-1]:
+                classed_pos.append(validation_data[i, :-1])
+            elif result[-1] < validation_data[i,-1]:
+                classed_neg.append(validation_data[i, :-1])
         error /= validation_size
         validation_indices = np.roll(validation_indices, validation_size)
         total_error += error
@@ -63,23 +67,37 @@ def extractDigit (d,c):
     classification = np.zeros((n,1))+c
     return np.hstack((digits_d,classification))
 
-digits_58 = np.concatenate((extractDigit(5,1),extractDigit(8,-1)),axis=0)
+classed_neg=[]
+classed_pos=[]
+digits_58 = np.concatenate((extractDigit(1,1),extractDigit(8,-1)),axis=0)
 np.random.shuffle(digits_58)
 print(cross_validation(digits_58,5,new_classifier_wrapper))
 
-rescaled_digits = digits_58[:,:-1]/16
-length = rescaled_digits.shape[0]
-digits_var = np.zeros((length,16))
+for i in range(len(classed_pos)):
+    err_pos=classed_pos[i].reshape(8,8)
+    plt.matshow(err_pos)
+    plt.title('Classified as 1')
+    plt.show()
 
-for i in range(length):
-    mat = np.reshape(rescaled_digits[i,:],(8,8))
-    var_rows = mat.var(axis=1)
-    var_cols = mat.var(axis=0)
-    digits_var[i,:] = np.concatenate((var_rows.T,var_cols))
+for i in range(len(classed_neg)):
+    err_neg=classed_neg[i].reshape(8,8)
+    plt.matshow(err_neg)
+    plt.title('Classified as 8')
+    plt.show()
 
-digits_var_58 = np.hstack((digits_var,digits_58[:,-1].reshape(length,1)))
-np.random.shuffle(digits_var_58)
-print(cross_validation(digits_var_58,5,new_classifier_wrapper))
+#rescaled_digits = digits_58[:,:-1]/16
+#length = rescaled_digits.shape[0]
+#digits_var = np.zeros((length,16))
+
+#for i in range(length):
+ #   mat = np.reshape(rescaled_digits[i,:],(8,8))
+  #  var_rows = mat.var(axis=1)
+   # var_cols = mat.var(axis=0)
+    #digits_var[i,:] = np.concatenate((var_rows.T,var_cols))
+
+#digits_var_58 = np.hstack((digits_var,digits_58[:,-1].reshape(length,1)))
+#np.random.shuffle(digits_var_58)
+#print(cross_validation(digits_var_58,5,new_classifier_wrapper))
 
 
 
