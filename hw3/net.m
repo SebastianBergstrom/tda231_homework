@@ -132,7 +132,7 @@ function res = grad(model, data, wd_coefficient)
   
   %% Computation of gradients
   function res = logistic_derivative(input)
-    res = exp(-input) ./ (1 + exp(-input)).^2;
+    res = exp(input) ./ (1 + exp(input)).^2;
   end
   err = 1/size(data.inputs, 2) * (class_prob-data.targets);
   res.input_to_hid = wd_coefficient*model.input_to_hid + ...

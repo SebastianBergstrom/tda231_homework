@@ -12,6 +12,8 @@
 % Output: 1.598844
 % net(0, 10, 70, 5.0, 0, false, 4)
 % Output: 2.301322
+% net(0, 10, 70, 20.0, 0, false, 4)
+% Output: 2.302585
 %% Momentum
 % net(0, 10, 70, 0.002, 0.9, false, 4)
 % Output: 2.300135
@@ -24,6 +26,8 @@
 % net(0, 10, 70, 1.0, 0.9, false, 4)
 % Output: 2.018723
 % net(0, 10, 70, 5.0, 0.9, false, 4)
+% Output: 2.302585
+% net(0, 10, 70, 20, 0.9, false, 4)
 % Output: 2.302585
 %% 2.4
 %% No early stopping
