@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9e77dd7-916e-4825-8441-c372667be539" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tda231_homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tda231_homework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw4/hw4.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/hw4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-28.8.0-py3.6.egg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe.manifest" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +17,8 @@
       <file leaf-file-name="hw4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw4/hw4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="414">
+              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -36,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="part1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw2/jan/part1.py">
+      <file leaf-file-name="svmkernels.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw4/jan/svmkernels.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1160">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="6">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -95,18 +85,13 @@
             <path>
               <item name="tda231_homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="tda231_homework" type="462c0819:PsiDirectoryNode" />
-              <item name="hw2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tda231_homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tda231_homework" type="462c0819:PsiDirectoryNode" />
-              <item name="hw2" type="462c0819:PsiDirectoryNode" />
-              <item name="jan" type="462c0819:PsiDirectoryNode" />
+              <item name="hw4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tda231_homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="tda231_homework" type="462c0819:PsiDirectoryNode" />
               <item name="hw4" type="462c0819:PsiDirectoryNode" />
+              <item name="jan" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -118,6 +103,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -152,7 +138,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="hw4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hw4" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <module name="tda231_homework" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,20 +178,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.3290938" />
-      <window_info anchor="bottom" x="0" y="0" width="295" height="544" id="Documentation" order="13" sideWeight="0.32430455" side_tool="true" visible="true" weight="0.40063593" />
+      <window_info anchor="bottom" x="0" y="0" width="295" height="544" id="Documentation" order="13" sideWeight="0.8938507" side_tool="true" weight="0.40063593" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.28616852" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.6756955" visible="true" weight="0.40063593" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.10614934" weight="0.40063593" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3290938" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09443631" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12518302" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="SciView" order="1" sideWeight="0.6351706" visible="true" weight="0.38945827" />
+      <window_info active="true" anchor="right" id="SciView" order="1" sideWeight="0.6351706" visible="true" weight="0.40043923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
@@ -244,10 +229,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/jan/svmkernels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hw4/hw4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="414">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
