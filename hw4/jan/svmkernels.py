@@ -23,8 +23,8 @@ wronglyLabeled = predictions != Y
 
 
 plt.plot(X[wronglyLabeled, 0], X[wronglyLabeled, 1], 'o',
-         markerFaceColor='none', markeredgewidth=edgeWidth,
-         markerSize=mSize+edgeWidth, label='Failed to classify correctly')
+         markerFaceColor='none', markeredgewidth=edgeWidth*2,
+         markerSize=mSize+edgeWidth*2, label='Failed to classify correctly')
 plt.plot(X[clf.support_, 0], X[clf.support_, 1], 'o',
          markerFaceColor='none', markeredgewidth=edgeWidth,
          markerSize=mSize+edgeWidth, label='Support vector')
