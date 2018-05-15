@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 def kmeans(k, X):
     assert(k >= 1)
 
-    mu = np.random.rand(k, 2)
+    mu = X[np.random.choice(X.shape[0], k, replace=False), :]
     it = 0
 
     prevIndices = -np.ones(X.shape[0])
