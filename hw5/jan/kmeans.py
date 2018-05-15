@@ -12,8 +12,6 @@ def kmeans(k, X):
 
     prevIndices = -np.ones(X.shape[0])
     while True:
-        if it == 2:
-            assignmentsTwoIterations = indices
         distances = np.linalg.norm(mu[0,:]-X, axis=1)
         indices = np.zeros(X.shape[0])
         for i in range(1,k):
@@ -21,6 +19,8 @@ def kmeans(k, X):
             shorter = tempDistances < distances
             distances[shorter] = tempDistances[shorter]
             indices[shorter] = i
+        if it <= 1:
+            assignmentsTwoIterations = indices
 
         for i in range(k):
             assigned = indices == i
@@ -29,7 +29,8 @@ def kmeans(k, X):
         if (indices == prevIndices).all():
             changedAssignment = indices != assignmentsTwoIterations
             plt.plot(X[changedAssignment, 0], X[changedAssignment, 1], 'o',
-                     label='Has changed assignment', markerfacecolor='none')
+                     label='Has changed assignment', markerfacecolor='none',
+                     markersize=12)
             for i in range(k):
                 assigned = indices == i
                 plt.plot(mu[i,0], mu[i,1], 'o', label='Cluster #{} mean'.format(i+1))
