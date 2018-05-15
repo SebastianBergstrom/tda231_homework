@@ -8,9 +8,9 @@ def kmeans(k, X):
     assert(k >= 1)
 
     mu = np.random.rand(k, 2)
-
     it = 0
 
+    prevIndices = -np.ones(X.shape[0])
     while True:
         if it == 2:
             assignmentsTwoIterations = indices
@@ -22,13 +22,11 @@ def kmeans(k, X):
             distances[shorter] = tempDistances[shorter]
             indices[shorter] = i
 
-
-        muTemp = np.zeros((k, 2))
         for i in range(k):
             assigned = indices == i
-            muTemp[i,:] = sum(X[assigned])/np.count_nonzero(assigned)
+            mu[i,:] = sum(X[assigned])/np.count_nonzero(assigned)
 
-        if (mu == muTemp).all():
+        if (indices == prevIndices).all():
             changedAssignment = indices != assignmentsTwoIterations
             plt.plot(X[changedAssignment, 0], X[changedAssignment, 1], 'o',
                      label='Has changed assignment', markerfacecolor='none')
@@ -39,8 +37,7 @@ def kmeans(k, X):
                          label='Cluster #{}'.format(i+1))
             plt.legend()
             return
-
-        mu = muTemp
+        prevIndices = indices
         it += 1
 
 
