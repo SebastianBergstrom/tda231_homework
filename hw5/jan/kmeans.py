@@ -1,5 +1,5 @@
 ##
-%matplotlib tk
+#%matplotlib tk
 import scipy.io
 import numpy as np
 import matplotlib.pyplot as plt
@@ -37,10 +37,10 @@ def kmeans(k, X):
                 plt.plot(X[assigned, 0], X[assigned, 1], '.',
                          label='Cluster #{}'.format(i+1))
             plt.legend()
+            plt.show()
             return
         prevIndices = indices
         it += 1
-
 
 
 mat = scipy.io.loadmat('hw5_p1a.mat')
