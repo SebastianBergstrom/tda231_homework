@@ -24,14 +24,12 @@ def kmeans(data, k):
         classification_matrix_old[:] = classification_matrix[:]
         classification_matrix = np.zeros((data.shape[0], k), dtype=bool)
         for index, points in enumerate(data):
-            print('Point {} is {}'.format(index, points))
             distance = []
             for classification in range(k):
                 distance.append(np.linalg.norm(points-mu[classification])**2)
             classified_point = distance.index(min(distance))
             classification_matrix[index, classified_point] = True
         for i in range(k):
-            print(classification_matrix[:, i])
             points_in_class = data[classification_matrix[:, i]]
             mu[i] = np.sum(points_in_class, axis=0)/np.sum(classification_matrix[:, i])
         it += 1
@@ -47,3 +45,4 @@ print('=====')
 plt.scatter(X[B[:, 0],0], X[B[:, 0], 1])
 plt.scatter(X[B[:, 1], 0], X[B[:, 1], 1])
 plt.show()
+
