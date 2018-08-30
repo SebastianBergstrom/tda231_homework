@@ -19,8 +19,8 @@ Sebastian's and Jan's fun solutions for the course TDA231.
 | [hw1](hw1/hw1.ipynb) | Done | April 16 | 20 |
 | [hw2](hw2/hw2.ipynb) | Done | April 23 | 20 |
 | hw3 | Done | May 07 | 20 |
-| [hw4](hw4/hw4.ipynb) | TODO | May 14 | 18.5 |
-| [hw5](hw5/hw5.ipynb) | TODO | May 21 | 18 |
+| [hw4](hw4/hw4.ipynb) | Done | May 14 | 18.5 |
+| [hw5](hw5/hw5.ipynb) | Done | May 21 | 18 |
 
 ## Grade level
 
