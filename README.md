@@ -15,16 +15,12 @@ Sebastian's and Jan's fun solutions for the course TDA231.
 
 | Homework | Status | Deadline | Score |
 | -------- | ------ | -------- | ----- |
-| [hw0](hw0/hw0.ipynb) | Done | 2018-03-26 | TBA |
-| hw1	| In progress | April 16 | TBA |
-| hw2	| TODO | April 23 | April 16 |
-| hw3	| TODO | May 07 | April 23 |
-| hw4	| TODO | May 14 | May 07 |
-| hw5	| TODO | May 21 | May 14 |
-
-## Exam 
-
-* 2018-05-29 10:00 - 24 Hour take-home exam
+| [hw0](hw0/hw0.ipynb) | Done | 2018-03-26 | 21 |
+| [hw1](hw1/hw1.ipynb) | Done | April 16 | 20 |
+| [hw2](hw2/hw2.ipynb) | Done | April 23 | 20 |
+| hw3 | Done | May 07 | 20 |
+| [hw4](hw4/hw4.ipynb) | TODO | May 14 | 18.5 |
+| [hw5](hw5/hw5.ipynb) | TODO | May 21 | 18 |
 
 ## Grade level
 
